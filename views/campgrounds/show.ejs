@@ -109,8 +109,7 @@
                                 <p class="starability-result" data-rating="<%= review.rating%>">
                                     Rated: <%= review.rating%> stars
                                 </p>
-                                <!-- <h6 class="card-subtitle mb-2 text-body-secondary">By <%= review.author.username %>
-                                </h6> -->
+
                                 <p class="card-text">
                                     Review: <%= review.body %>
                                 </p>
@@ -133,6 +132,7 @@
     <script>
         const mapToken = '<%-process.env.MAPBOX_TOKEN%>';
         const campground = '<%- JSON.stringify(campground) %>'
+        // console.log(mapToken)
     </script>
 
     <script src="/javascripts/showPageMap.js"></script>
